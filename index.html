@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HR's Personal Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #141E30, #243B55);
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .select-card {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      display: inline-block;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    select {
+      padding: 14px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background: #fff;
+      color: #333;
+      cursor: pointer;
+    }
+
+    select:hover {
+      background: #f4f4f4;
+    }
+
+    .quote, .about, .funfact {
+      margin: 30px 0;
+      padding: 20px;
+      border-left: 5px solid #00B894;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .quote p {
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .about h2, .funfact h2 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #00cec9;
+    }
+
+    .about p, .funfact p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    footer span {
+      color: #00cec9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to HR's Personal Hub</h1>
+    <p>Your one-stop space to explore my digital world</p>
+  </header>
+
+  <div class="container">
+
+    <div class="select-card">
+      <h2>Select & Explore</h2>
+      <select id="options">
+        <option value="">-- Choose an option --</option>
+        <option value="https://cv-topaz-eight.vercel.app/">My CV</option>
+        <option value="https://your-timetable-link.com">My Timetable</option>
+        <option value="https://basic-sanatani-knowledge.vercel.app/">Environment Framework Project</option>
+        <option value="https://your-netflix-clone-link.com">Netflix Clone Project</option>
+      </select>
+    </div>
+
+    <div class="quote">
+      <p>"Success comes and goes, but purpose blessed by Shree_Krsna gives reason to my work"</p>
+    </div>
+
+    <div class="about">
+      <h2>About Me</h2>
+      <p>Hey there! I'm <strong>HR</strong>, a passionate learner, developer, and problem-solver. I believe in simplicity, purpose-driven work, and connecting creativity with code. Explore my projects and get a glimpse of my digital identity.</p>
+    </div>
+
+    <div class="funfact">
+      <h2>Fun Fact</h2>
+      <p>The first ever website created in history is still online. It was built by Tim Berners-Lee in 1991 — and it still works today! Check it out <a href="https://info.cern.ch/" target="_blank" style="color: #55efc4; text-decoration: underline;">here</a>.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    Built with purpose and creativity by <a href="https://www.linkedin.com/in/hr1937/"><span>HR</span></a>
+  </footer>
+
+  <script>
+    document.getElementById("options").addEventListener("change", function() {
+      const url = this.value;
+      if (url) {
+        window.open(url, '_blank');
+        this.selectedIndex = 0;
+      }
+    });
+  </script>
+
+</body>
+</html>
